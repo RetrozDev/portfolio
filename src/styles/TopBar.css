@@ -1,0 +1,110 @@
+.TopBar {
+	display: flex;
+	background-color: var(--dark1);
+	height: 35px;
+	justify-content: space-between;
+	padding: 0 15px;
+
+	.logo {
+        svg {
+            height: 100%;
+            display:flex;
+            path:first-of-type {
+                fill: var(--dark4);
+            }
+    
+            path:nth-of-type(2) {
+                fill: var(--light3);
+            }
+        }
+    }
+    
+
+	.middleNav {
+		display: flex;
+		height: 100%;
+		width: 70%;
+		align-items: center;
+		gap: 10px;
+
+		.arrows {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			svg:first-of-type {
+				width: 1.5rem;
+				height: 1.5rem;
+				padding: .2rem;
+				margin: 3px;
+				border-radius: 3px;
+				&&:hover {
+					background-color: #ffffff14;
+				}
+				path {
+					fill: var(--light3);
+				}
+			}
+
+			svg:nth-of-type(2) {
+				width: 1.5rem;
+				height: 1.5rem;
+				padding: .2rem;
+				-webkit-transform: scaleX(-1);
+				transform: scaleX(-1);
+				path {
+					fill: var(--dark4);
+				}
+			}
+		}
+
+		.searchBar {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #00000003;
+			border: 1px solid var(--dark4);
+			border-radius: 6px;
+			padding: 4px;
+			width: 100%;
+
+			svg {
+
+				width: 14px;
+				margin-right: 3px;
+
+				path {
+					fill: var(--dark4);
+				}
+			}
+
+			input {
+                width: 100%;
+				background: transparent;
+				border: none;
+				outline: none;
+				font-family: var(--fira);
+				color: var(--dark4);
+				font-size: 0.75rem;
+                text-align: center;
+
+				&&::placeholder {
+					color: var(--dark4);
+                    width: 100%;
+                    text-align: center;
+				}
+			}
+		}
+	}
+
+    .rightButtons {
+        display: flex;
+        gap: 6px;
+        
+        svg {
+            width: 1rem;
+            path{
+                fill: var(--light3);
+            }
+        }
+    }
+}
