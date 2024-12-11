@@ -1,17 +1,16 @@
-import "../styles/topBar.css";
-import Logo from "../svg/Logo";
-import Arrow from "../svg/Arrow";
+import "../../styles/VsCode/components/TopBar.css";
+import { LogoSvg, ArrowSvg } from "../../svg/VsCode/components/TopBar";
 
 const TopBar = () => {
 	return (
 		<nav className="TopBar">
 			<div className="logo">
-				<Logo />
+				<LogoSvg />
 			</div>
 			<div className="middleNav">
 				<div className="arrows">
-					<Arrow />
-					<Arrow />
+					<ArrowSvg />
+					<ArrowSvg />
 				</div>
 				<div className="searchBar">
 					<svg
@@ -49,9 +48,7 @@ const TopBar = () => {
 				{/* Layout Manage */}
 				<svg viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<title>Layout Manage</title>
-					<path
-						d="M1.23077 0L0 1.23077V13.5385L1.23077 14.7692H6.15385L7.38462 13.5385V1.23077L6.15385 0H1.23077ZM1.23077 13.5385V1.23077H6.15385V13.5385H1.23077ZM9.84615 1.23077L11.0769 0H14.7692L16 1.23077V4.92308L14.7692 6.15385H11.0769L9.84615 4.92308V1.23077ZM11.0769 1.23077V4.92308H14.7692V1.23077H11.0769ZM9.84615 9.84615L11.0769 8.61539H14.7692L16 9.84615V13.5385L14.7692 14.7692H11.0769L9.84615 13.5385V9.84615ZM11.0769 9.84615V13.5385H14.7692V9.84615H11.0769Z"
-					/>
+					<path d="M1.23077 0L0 1.23077V13.5385L1.23077 14.7692H6.15385L7.38462 13.5385V1.23077L6.15385 0H1.23077ZM1.23077 13.5385V1.23077H6.15385V13.5385H1.23077ZM9.84615 1.23077L11.0769 0H14.7692L16 1.23077V4.92308L14.7692 6.15385H11.0769L9.84615 4.92308V1.23077ZM11.0769 1.23077V4.92308H14.7692V1.23077H11.0769ZM9.84615 9.84615L11.0769 8.61539H14.7692L16 9.84615V13.5385L14.7692 14.7692H11.0769L9.84615 13.5385V9.84615ZM11.0769 9.84615V13.5385H14.7692V9.84615H11.0769Z" />
 				</svg>
 			</div>
 		</nav>

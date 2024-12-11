@@ -3,7 +3,7 @@
 	display: flex;
 	align-items: flex-start;
 
-	min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+	min-height: 100vh;
 
 	.vsCodeShortcut {
 		display: flex;

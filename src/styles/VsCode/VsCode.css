@@ -1,0 +1,11 @@
+.VsCode {
+	background-color: var(--dark1);
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    main {
+        display: flex;
+        flex: 1; 
+        height: 100%;
+    }
+}

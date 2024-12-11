@@ -1,12 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import App from "./App.jsx";
 // Pages
 import Desktop from "./pages/Desktop.jsx";
-import Home from "./pages/Home.jsx";
+import VsCode from "./pages/VsCode.jsx";
 
 import "./styles/index.css";
+
 
 const router = createBrowserRouter([
 	{
@@ -17,12 +18,19 @@ const router = createBrowserRouter([
 				path: "/",
 			},
 			{
-				element: <Home />,
-				path: "/home",
+				path: "/vs-code",
+				element: <VsCode />,
+				children: [
+					{
+						path: ":file",
+						element: <VsCode />,
+					},
+				],
 			},
 		],
 	},
 ]);
+
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
 		<RouterProvider router={router} />
