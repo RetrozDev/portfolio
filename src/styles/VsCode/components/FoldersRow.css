@@ -1,0 +1,52 @@
+.FoldersRows {
+	display: flex;
+	align-items: center;
+    margin-top: 2px;
+	gap: 6px;
+	font-family: var(--fira);
+	width: 100%;
+	align-self: flex-end;
+	transition: all .1s;
+	border: none;
+	background: transparent;
+	line-height: normal;
+	align-items: center;
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+	-webkit-appearance: none;
+	appearance: none;
+
+	&&:hover {
+		background-color: var(--dark3);
+	}
+	.chevronIcon {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		svg {
+			width: 16px;
+
+			path {
+				fill: var(--light2);
+			}
+		}
+	}
+
+	.fileIcon {
+		svg {
+			width: 20px;
+		}
+	}
+
+	p {
+        display: flex;
+        align-items: center;
+		height: 100%;
+		color: var(--light1);
+        font-size: 0.75rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        flex: 1;
+	}
+}
