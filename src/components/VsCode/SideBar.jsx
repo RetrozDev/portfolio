@@ -45,7 +45,7 @@ const SideBar = () => {
 				/>
 				<FoldersRows
 					marginLeft="56px"
-                    url="/vs-code"
+                    url="Accueil.jsx"
 					file="Accueil.jsx"
 					FileIcon={SideBarIcons.JsxIcon}
 				/>

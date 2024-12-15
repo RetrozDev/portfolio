@@ -4,7 +4,7 @@ const Desktop = () => {
 	const navigate = useNavigate();
 	return (
 		<main className="Desktop">
-			<div className="vsCodeShortcut" onDoubleClick={() => navigate("/vs-code")}>
+			<div className="vsCodeShortcut" onDoubleClick={() => navigate("/vs-code/Accueil.jsx")}>
 				<svg
 
 					viewBox="0 0 66 66"
