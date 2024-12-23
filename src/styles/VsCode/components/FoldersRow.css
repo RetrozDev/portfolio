@@ -27,7 +27,7 @@
 		align-items: center;
 		svg {
 			width: 16px;
-
+			transform: rotate(-90deg);
 			path {
 				fill: var(--light2);
 			}
@@ -55,4 +55,12 @@
 
 .FoldersRows.active {
 	background-color: var(--dark3);
+
+}
+.FoldersRows.closed {
+	.chevronIcon  {
+		svg {
+			transform: rotate(0);
+		}
+	}
 }
