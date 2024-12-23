@@ -1,0 +1,47 @@
+[data-theme="dracula"] {
+	/* Dark Colors */
+	--dark1: #191a21;
+	--dark2: #21222c;
+	--dark3: #282a36;
+	--dark4: #44475a;
+
+	/* Light Colors */
+	--light1: #edf8f2;
+	--light2: #c5c5c5;
+	--light3: #6272a4;
+
+	/* Accents Colors */
+	--red: #ff5555;
+	--green: #50fa7b;
+	--yellow: #f1fa8c;
+	--blue: #bd93f9;
+	--magenta: #ff79c6;
+	--white: #f8f8f3;
+	--cyan: #8be9fd;
+	--comment: #6272a4;
+
+
+}
+
+[data-theme="monokai"] {
+	/* Dark Colors */
+	--dark1: #1e1f1c;
+	--dark2: #1e1f1c;
+	--dark3: #272822;
+	--dark4: #34352f;
+
+	/* Light Colors */
+	--light1: #f8f8f2;
+	--light2: #c5c5a8;
+	--light3: #7d7c7d;
+
+	/* Accents Colors */
+	--red: #c4265e;
+	--green: #86b42b;
+	--yellow: #b3b42b;
+	--blue: #6a7ec8;
+	--magenta: #8c6bc8;
+	--white: #e3e3dd;
+	--cyan: #56adbc;
+	--comment: #878165;
+}

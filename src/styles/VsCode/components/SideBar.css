@@ -1,0 +1,53 @@
+.sideBar {
+	display: flex;
+	flex-direction: column;
+	width: 170px;
+	padding: 4px;
+	background-color: var(--dark2);
+
+	.toolBar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2px;
+
+		p {
+			font-family: var(--fira);
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			flex: 1;
+		}
+
+		.icons {
+			display: flex;
+			gap: 2px;
+
+			svg {
+				width: 24px;
+				height: 24px;
+				flex-shrink: 0;
+				border-radius: 0.25rem;
+				padding: 4px;
+				transition: all 0.1s linear;
+				&&:hover {
+					background-color: #ffffff0c;
+				}
+				path {
+					fill: var(--light2);
+				}
+			}
+		}
+
+
+	}
+
+    .folders {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+}

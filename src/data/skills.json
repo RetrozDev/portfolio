@@ -1,0 +1,76 @@
+{
+	"languages": [
+		{
+			"id": 1,
+			"name": "HTML"
+		},
+		{
+			"id": 2,
+			"name": "CSS"
+		},
+		{
+			"id": 3,
+			"name": "JavaScript"
+		},
+		{
+			"id": 4,
+			"name": "SQL"
+		},
+		{
+			"id": 5,
+			"name": "Sass"
+		}
+	],
+	"tools": [
+		{
+			"id": 1,
+			"name": "VS Code"
+		},
+		{
+			"id": 2,
+			"name": "Figma"
+		},
+		{
+			"id": 3,
+			"name": "Trello"
+		},
+		{
+			"id": 4,
+			"name": "Jira"
+		},
+		{
+			"id": 5,
+			"name": "MySQL"
+		},
+		{
+			"id": 6,
+			"name": "Node.js"
+		},
+		{
+			"id": 7,
+			"name": "Npm"
+		},
+		{
+			"id": 8,
+			"name": "Biome"
+		},
+		{
+			"id": 9,
+			"name": "Vercel"
+		},
+		{
+			"id": 10,
+			"name": "Postman"
+		}
+	],
+	"frameworkslibraries": [
+		{
+			"id": 1,
+			"name": "React"
+		},
+		{
+			"id": 3,
+			"name": "Express"
+		}
+	]
+}

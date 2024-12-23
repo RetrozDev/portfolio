@@ -1,0 +1,44 @@
+.Page404 {
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      font-size: 3rem;
+      color: var(--red);
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      color: var(--light1);
+      margin-bottom: 20px;
+    }
+  
+    img {
+        position: absolute;
+        right: 20px;
+        bottom: 0;       
+    }
+
+    .btn-home {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      background: none;
+      color: var(--light1);
+      outline: 1px solid var(--red);
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: var(--red);
+      }
+    }
+  }
+  

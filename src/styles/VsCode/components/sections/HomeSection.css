@@ -1,0 +1,80 @@
+.HomeSection {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 150px;
+	font-family: var(--fira);
+	flex-wrap: wrap;
+
+	.textSection {
+		margin: auto;
+		h1 {
+			color: var(--light1);
+			font-size: 3.5rem;
+			font-weight: 600;
+		}
+
+		h2 {
+			color: var(--light2);
+			font-size: 1.5rem;
+			font-weight: 500;
+			display: inline-block;
+			padding-right: 20px;
+			position: relative;
+
+			&::after {
+				content: "";
+				display: block;
+				width: 2px;
+				height: 1.5rem;
+				background-color: var(--blue);
+				position: absolute;
+				right: 5px;
+				top: 0;
+				animation: blink-animation 1s steps(5, start) infinite;
+			}
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 75px;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			color: var(--light1);
+			font-size: 1rem;
+			padding: 7px 25px;
+			border-radius: 6px;
+
+			&:nth-of-type(1) {
+				border: 2px solid var(--blue);
+			}
+			&:nth-of-type(2) {
+				background-color: var(--blue);
+			}
+		}
+	}
+	svg {
+		width: 400px;
+		margin: auto;
+		margin-top: 75px;
+		path:nth-of-type(1) {
+			fill: var(--light1);
+		}
+
+		path:nth-of-type(2) {
+			fill: var(--blue);
+		}
+	}
+}
+
+@keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}

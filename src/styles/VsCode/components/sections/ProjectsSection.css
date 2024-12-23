@@ -1,0 +1,64 @@
+/* ProjectsSection.css */
+.ProjectsSection {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 2rem;
+	padding: 2rem;
+    font-family: var(--fira);
+
+	.project-card {
+		border-radius: 8px;
+        width: 400px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--dark4);
+		overflow: hidden;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+		}
+
+		.project-title {
+			font-size: 1.5rem;
+			font-weight: 500;
+            color: var(--light1);
+			margin: 1rem 0;
+			padding: 0 1rem;
+		}
+
+		.project-description {
+            color: var(--light2);
+			font-size: 1rem;
+			padding: 0 1rem;
+			display: -webkit-box; 
+            line-clamp: 2;
+			-webkit-line-clamp: 2; 
+			-webkit-box-orient: vertical; 
+			text-overflow: ellipsis; 
+            margin: 10px 0;
+		}
+
+		.thumbnail {
+			width: 100%;
+			position: relative;
+			padding-top: 56.25%; 
+			background-position: center;
+			background-size: contain;
+		}
+
+		.project-link {
+			display: block;
+			text-align: center;
+			background-color: var(--dark4);
+			color: white;
+			text-decoration: none;
+			padding: 0.8rem 1.5rem;
+			transition: opacity 0.3s ease;
+
+			&:hover {
+                opacity: .9;
+			}
+		}
+	}
+}

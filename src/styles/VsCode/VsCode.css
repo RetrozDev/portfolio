@@ -1,0 +1,49 @@
+.VsCode {
+	background-color: var(--dark1);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	display: flex;
+	flex: 1;
+	height: 100%;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	flex: 1; 
+    background-color: var(--dark3);
+	header {
+		display: flex;
+		flex-direction: row;
+        background-color: var(--dark1);
+		.fileName {
+            padding: 8px;
+            width: 156px;
+            border-top: 2px solid var(--magenta);
+            background-color: var(--dark3);
+			display:flex;
+            gap: 6px;
+            align-items: center;
+            font-family: var(--fira);
+            color: #fff;
+            svg {
+				width: 16px;
+			}
+
+			span {
+				font-size: 10px;
+				color: var(--blue);
+			}
+
+            p {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+		}
+	}
+}

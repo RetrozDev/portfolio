@@ -1,0 +1,39 @@
+.SkillsSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: var(--light1);
+    font-family: var(--fira);
+    padding: 20px;
+    article {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        gap: 10px;
+        border: 1px solid var(--comment);
+        border-radius: 6px;
+        width: 400px;
+        padding-bottom: 10px;
+        .header {
+            background-color: var(--comment);
+            color: var(--dark3);
+            font-weight: 500;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            position: relative;
+            margin-left: 10px;
+            &::before {
+                content: "•";
+                margin:  5px ;
+            }
+
+        }
+    }
+
+}

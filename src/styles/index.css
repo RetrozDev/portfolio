@@ -1,6 +1,34 @@
 @font-face {
-	font-family: Baloo2;
-	src: url("../assets/fonts/Baloo2.ttf");
+	font-family: "FiraCode", monospace;
+	src: url(/FiraCode.ttf);
+}
+
+:root {
+	/* Colors */
+	/* Dark Colors */
+	--dark1: #191a21;
+	--dark2: #21222c;
+	--dark3: #282a36;
+	--dark4: #44475a;
+
+	/* Light Colors */
+	--light1: #edf8f2;
+	--light2: #c5c5c5;
+	--light3: #6272a4;
+
+	/* Accents Colors */
+	--red: #ff5555;
+	--green: #50fa7b;
+	--yellow: #f1fa8c;
+	--blue: #bd93f9;
+	--magenta: #ff79c6;
+	--white: #f8f8f3;
+	--cyan: #8be9fd;
+	--comment: #6272a4;
+
+	/* Fonts */
+	--fira: "FiraCode", monospace ;
+
 }
 
 * {
@@ -10,36 +38,4 @@
 	overflow: hidden;
 }
 
-:root {
-	--dark-color: #090909;
-	--light-color: #e9e9e9;
-	--light-color2: #999999;
-	--baloo: 'Baloo2'
-}
 
-body {
-	cursor: none;
-}
-
-
-.fog {
-	position: absolute;
-	z-index: 10;
-	height: 100vh;
-	width: 100vw;
-	opacity: 0.05;
-	object-fit: cover;
-	user-select: none;
-	pointer-events: none;
-}
-
-.cursor {
-	width: 20px;
-	height: 20px;
-	border: 2px solid white;
-	border-radius: 50%;
-	position: absolute;
-	pointer-events: none;
-	transform: translate(-50%, -50%);
-	transition: transform 0.1s ease;
-}
