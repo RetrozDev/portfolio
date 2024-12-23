@@ -1,0 +1,32 @@
+.AboutSection {
+	padding: 20px;
+	font-family: var(--fira);
+	h1 {
+		font-size: 2rem;
+		margin: 15px 0;
+		color: var(--blue);
+
+		&::before {
+			content: "•";
+			margin-right: 10px;
+		}
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 0 0 20px;
+		font-weight: 500;
+		color: var(--light1);
+        text-align: justify;
+
+		span {
+			color: var(--blue);
+		}
+	}
+
+	hr {
+		border: 0;
+		height: 2px;
+		background: var(--dark4);
+	}
+}

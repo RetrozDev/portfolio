@@ -6,6 +6,8 @@ import "../../styles/VsCode/components/SideBar.css";
 const SideBar = () => {
     const [foldersState, setFoldersState] = useState({
         src: true,
+        data: true,
+        pages: true
     });
 
     const toggleFolder = (folderName) => {
