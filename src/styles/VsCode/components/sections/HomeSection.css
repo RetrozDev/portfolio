@@ -39,6 +39,8 @@
 
 	.buttons {
 		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
 		justify-content: space-between;
 		margin-top: 75px;
 		a {
@@ -78,3 +80,29 @@
 		visibility: hidden;
 	}
 }
+
+
+@media (max-width: 576px) {
+	.HomeSection {
+		padding: 50px;
+		.textSection {
+			h1 {
+				font-size: 2rem;
+			}
+			h2 {
+				font-size: 1rem;
+
+				&::after {
+					height: 1rem;
+					right: 10px;
+				}
+			}
+		}
+
+	}
+  }
+  
+  /* Écrans moyens (tablettes, mobile paysage) */
+  @media (min-width: 577px) and (max-width: 768px) {
+	/*Style à faire*/
+  }

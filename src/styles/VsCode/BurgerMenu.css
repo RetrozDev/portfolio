@@ -1,0 +1,13 @@
+.BurgerMenu {
+    display: flex;
+	flex-direction: column;
+	width: 170px;
+    position: absolute;
+    top: 89px;
+    left: 0;
+    background-color: var(--dark3);
+    border: 2px  solid var(--dark4);
+    border-radius: 6px;
+    padding: 10;
+    z-index: 1;
+}
