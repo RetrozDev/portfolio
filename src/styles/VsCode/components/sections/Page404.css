@@ -20,7 +20,7 @@
     }
   
     img {
-        position: absolute;
+        position: fixed;
         right: 20px;
         bottom: 0;       
     }
@@ -42,3 +42,13 @@
     }
   }
   
+
+@media (max-width: 576px) {
+  .Page404 {
+    img {
+      position: fixed;
+      height: 200px;
+      bottom: 0;
+    }
+  }
+}
