@@ -29,4 +29,47 @@
 			text-align: center;
 		}
 	}
+	
+	.vsCodeShortcutPhone {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		padding: 5px;
+		border-radius: 8px;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 0.875rem;
+		margin: 1rem;
+		transition: all .1s;
+
+
+		svg {
+			height: 50px;
+			background-color: rgba(79, 79, 79, 0.143);
+			border-radius: 6px;
+			margin-bottom: 5px;
+		}
+
+		p {
+			text-align: center;
+			font-size: 1rem;
+			font-size: 12px;
+		}
+	}
+}
+
+
+@media (max-width: 576px) {
+	/* Style adjustments for tablets or landscape mobile views */
+	.Desktop {
+		justify-content: center;
+		background: url("wallpaper-phone.png");
+		.vsCodeShortcut {
+			display: none;
+		}
+
+		.vsCodeShortcutPhone {
+			display: flex;
+		}
+	}
 }

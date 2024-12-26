@@ -27,9 +27,9 @@ header {
 
 .BurgerButton {
 	display: none;
-	width: 52px;
+	width: 36px;
 	background-color: var(--dark3);
-	padding: 10px;
+	padding: 5px;
 	box-shadow: inset -1px 0 0 0 var(--dark4);
 	border-top: 2px solid var(--blue);
 	outline: none;
@@ -75,8 +75,20 @@ header {
 
 /* Small screens (mobile portrait) */
 @media (max-width: 576px) {
-	.VsCode main {
+	.VsCode 
+	main {
 		flex-direction: column;
+		header {
+			height: 36px;
+			.fileTab {
+				svg {
+					width: 12px;
+				}
+				p {
+					font-size: 12px;
+				}
+			}
+		}
 	}
 
 	.BurgerButton {
@@ -84,10 +96,4 @@ header {
 	}
 }
 
-/* Medium screens (tablets, mobile landscape) */
-@media (min-width: 577px) and (max-width: 768px) {
-	/* Style adjustments for tablets or landscape mobile views */
-	.fileTab {
-		width: auto;
-	}
-}
+

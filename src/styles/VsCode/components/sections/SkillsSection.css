@@ -37,3 +37,11 @@
     }
 
 }
+
+@media (max-width: 576px) {
+	.SkillsSection {
+        article {
+            font-size: 1rem;
+        }
+	}
+}
