@@ -1,6 +1,7 @@
 .AboutSection {
 	padding: 20px;
 	font-family: var(--fira);
+
 	h1 {
 		font-size: 2rem;
 		margin: 15px 0;
@@ -17,7 +18,7 @@
 		margin: 0 0 20px;
 		font-weight: 500;
 		color: var(--light1);
-        text-align: justify;
+		text-align: justify;
 
 		span {
 			color: var(--blue);
@@ -28,5 +29,18 @@
 		border: 0;
 		height: 2px;
 		background: var(--dark4);
+	}
+}
+
+/* Small screens (mobile portrait) */
+@media (max-width: 576px) {
+	.AboutSection {
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
 	}
 }

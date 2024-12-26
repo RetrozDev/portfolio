@@ -1,7 +1,7 @@
 import { RightBarIcons } from "../../svg/VsCode/components/RightBar";
 import "../../styles/VsCode/components/RightBar.css";
 
-export const RightBar = () => {
+const RightBar = () => {
 	return (
 		<nav className="RightBar">
 			<div className="TopGroup">
@@ -9,7 +9,7 @@ export const RightBar = () => {
 				<RightBarIcons.SearchIcon />
 				<RightBarIcons.SourceIcon />
 				<RightBarIcons.DebugIcon />
-				<RightBarIcons.ExtensionsIcon className="Extensions"/>
+				<RightBarIcons.ExtensionsIcon className="Extensions" />
 				<RightBarIcons.LiveShareIcon />
 				<RightBarIcons.GitlensIcon />
 				<RightBarIcons.PostmanIcon />
@@ -21,3 +21,5 @@ export const RightBar = () => {
 		</nav>
 	);
 };
+
+export default RightBar;

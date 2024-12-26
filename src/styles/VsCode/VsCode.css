@@ -7,6 +7,7 @@
 
 main {
 	display: flex;
+	flex-direction: row;
 	flex: 1;
 	height: 100%;
 }
@@ -14,36 +15,79 @@ main {
 section {
 	display: flex;
 	flex-direction: column;
-	flex: 1; 
-    background-color: var(--dark3);
-	header {
-		display: flex;
-		flex-direction: row;
-        background-color: var(--dark1);
-		.fileName {
-            padding: 8px;
-            width: 156px;
-            border-top: 2px solid var(--magenta);
-            background-color: var(--dark3);
-			display:flex;
-            gap: 6px;
-            align-items: center;
-            font-family: var(--fira);
-            color: #fff;
-            svg {
-				width: 16px;
-			}
+	flex: 1;
+	background-color: var(--dark3);
+}
 
-			span {
-				font-size: 10px;
-				color: var(--blue);
-			}
+header {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--dark1);
+}
 
-            p {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-            }
+.BurgerButton {
+	display: none;
+	width: 52px;
+	background-color: var(--dark3);
+	padding: 10px;
+	box-shadow: inset -1px 0 0 0 var(--dark4);
+	border-top: 2px solid var(--blue);
+	outline: none;
+
+	svg path {
+		fill: var(--light3);
+	}
+
+	&:hover {
+		padding: 8px;
+		svg path {
+			fill: var(--light2);
 		}
+	}
+}
+
+.fileTab {
+	padding: 8px;
+	width: 156px;
+	border-top: 2px solid var(--magenta);
+	background-color: var(--dark3);
+	display: flex;
+	gap: 6px;
+	align-items: center;
+	font-family: var(--fira);
+	color: #fff;
+
+	svg {
+		width: 16px;
+	}
+
+	span {
+		font-size: 10px;
+		color: var(--blue);
+	}
+
+	p {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+/* Small screens (mobile portrait) */
+@media (max-width: 576px) {
+	.VsCode main {
+		flex-direction: column;
+	}
+
+	.BurgerButton {
+		display: flex;
+	}
+}
+
+/* Medium screens (tablets, mobile landscape) */
+@media (min-width: 577px) and (max-width: 768px) {
+	/* Style adjustments for tablets or landscape mobile views */
+	.fileTab {
+		width: auto;
 	}
 }

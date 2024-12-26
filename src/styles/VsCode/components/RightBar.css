@@ -24,3 +24,15 @@
 		}
 	}
 }
+
+
+@media (max-width: 576px) {
+.RightBar {
+	display: none;
+}
+  }
+  
+  /* Écrans moyens (tablettes, mobile paysage) */
+  @media (min-width: 577px) and (max-width: 768px) {
+  /* Style à faire */
+  }
