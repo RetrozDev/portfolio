@@ -6,19 +6,18 @@
 	padding: 0 15px;
 
 	.logo {
-        svg {
-            height: 100%;
-            display:flex;
-            path:first-of-type {
-                fill: var(--dark4);
-            }
-    
-            path:nth-of-type(2) {
-                fill: var(--light3);
-            }
-        }
-    }
-    
+		svg {
+			height: 100%;
+			display: flex;
+			path:first-of-type {
+				fill: var(--dark4);
+			}
+
+			path:nth-of-type(2) {
+				fill: var(--light3);
+			}
+		}
+	}
 
 	.middleNav {
 		display: flex;
@@ -68,7 +67,6 @@
 			width: 100%;
 
 			svg {
-
 				width: 14px;
 				margin-right: 3px;
 
@@ -78,33 +76,39 @@
 			}
 
 			input {
-                width: 100%;
+				width: 100%;
 				background: transparent;
 				border: none;
 				outline: none;
 				font-family: var(--fira);
 				color: var(--dark4);
 				font-size: 0.75rem;
-                text-align: center;
+				text-align: center;
 
 				&&::placeholder {
 					color: var(--dark4);
-                    width: 100%;
-                    text-align: center;
+					width: 100%;
+					text-align: center;
 				}
 			}
 		}
 	}
 
-    .rightButtons {
-        display: flex;
-        gap: 6px;
-        
-        svg {
-            width: 1rem;
-            path{
-                fill: var(--light3);
-            }
-        }
-    }
+	.rightButtons {
+		display: flex;
+		gap: 6px;
+		margin-left: 6px;
+		svg {
+			width: 1rem;
+			path {
+				fill: var(--light3);
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.TopBar {
+		padding: 0 8px;
+	}
 }

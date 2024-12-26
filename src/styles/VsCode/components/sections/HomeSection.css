@@ -42,10 +42,12 @@
 		flex-wrap: wrap;
 		gap: 10px;
 		justify-content: space-between;
+		padding-right: 20px;
 		margin-top: 75px;
 		a {
 			display: flex;
 			align-items: center;
+			margin: auto;
 			justify-content: center;
 			text-decoration: none;
 			color: var(--light1);
@@ -91,10 +93,12 @@
 			}
 			h2 {
 				font-size: 1rem;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 
 				&::after {
 					height: 1rem;
-					right: 10px;
 				}
 			}
 		}
