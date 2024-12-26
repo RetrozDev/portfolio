@@ -63,7 +63,6 @@
 	/* Style adjustments for tablets or landscape mobile views */
 	.Desktop {
 		justify-content: center;
-		background: url("wallpaper-phone.png");
 		.vsCodeShortcut {
 			display: none;
 		}
