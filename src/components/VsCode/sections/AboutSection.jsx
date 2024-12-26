@@ -10,7 +10,7 @@ const AboutSection = () => {
 				<p>
 					Salut ! Moi c'est <span>Ryan</span>, et je suis développeur web
 					passionné. Mon truc à moi, c'est <span>JavaScript</span>, et j'adore
-					créer des sites et applications web qui déchirent. Je travaille avec
+					créer des sites et applications web innovants. Je travaille avec
 					des outils comme <span>React</span>, <span>Node.js</span>,
 					<span>Express</span>, et <span>Mysql</span> pour créer des
 					expériences qui sont à la fois rapides et fun à utiliser. Je suis
